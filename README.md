@@ -50,3 +50,37 @@ real    0m0.035s
 user    0m0.035s
 sys     0m0.000s
 ```
+
+## Using xargs
+
+Why use it?  "xargs - build and execute command lines from standard input"
+[offical docs](https://man7.org/linux/man-pages/man1/xargs.1.html)
+
+Allows you to do things like perform operations on the results of find...i.e. delete files or archive them.
+
+`find /tmp -name core -type f -print | xargs /bin/rm -f`
+
+```bash
+
+#create files in /tmp
+touch  /tmp/foo{0..10}
+
+#print them
+find /tmp -name foo* -type f -print
+
+#count them
+find /tmp -name foo* -type f -print | wc -l
+
+#delete them
+find /tmp -name foo* -type f -print | xargs /bin/rm -f
+
+#verify they are gone
+ls -l /tmp/
+```
+
+
+
+
+
+
+```
