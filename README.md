@@ -1,6 +1,9 @@
 # locate-find
 Comparing locate and find
 
+![IMG_BEE24C84E637-1](https://user-images.githubusercontent.com/58792/146679839-e515900e-7ae2-411d-9dc4-59b583b9a839.jpeg)
+
+
 
 ## Using Locate
 
