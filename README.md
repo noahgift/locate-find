@@ -78,9 +78,7 @@ find /tmp -name foo* -type f -print | xargs /bin/rm -f
 ls -l /tmp/
 ```
 
+## Using mdfind
 
+On OS X you can search metadata via the `mdfind` command
 
-
-
-
-```
