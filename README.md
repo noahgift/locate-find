@@ -82,3 +82,20 @@ ls -l /tmp/
 
 On OS X you can search metadata via the `mdfind` command
 
+```bash
+#cd into a directory
+
+#search for the readme.txt file in the directory
+mdfind -name readme.txt -onlyin .
+
+#search for the readme.txt file but do it live
+mdfind -name readme.txt -onlyin . -live
+
+#find files only within a data range
+mdfind -name readme.txt -onlyin . date:12/1/2011-12/1/2021
+mdfind -name readme.txt -onlyin . date:12/1/2021-12/1/2023
+
+#find large files
+src mdfind 'kMDItemFSSize >= 10000000000' | xargs du -sh
+```
+
