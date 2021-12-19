@@ -80,6 +80,11 @@ ls -l /tmp/
 
 ## Using mdfind
 
+Find out what mdfind can do:
+
+`man mdfind`
+
+
 On OS X you can search metadata via the `mdfind` command
 
 ```bash
